@@ -1,0 +1,126 @@
+body {
+	margin: 0;
+	padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #212529;
+    
+}
+.banner {
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/background_3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+   -webkit-mask-image: linear-gradient(to top, transparent 10%, #9d9309 80%);
+}
+.sobreCristiano {
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    padding-top: 20px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+.collumn {
+    flex-direction: column;
+}
+.sobre {
+    height: 210px;
+    display: flex;
+    opacity: 0.8;
+}
+.sobre1, .sobre2, .sobre3 {
+    flex: 1;
+    margin: 10px;
+    font-size: 20px;
+    border-right: #ffffff solid 1px;
+}
+.sobreTitulo {
+    font-size: 20px;
+    padding-top: 10px;
+    margin-left: 10px;
+    color: #ffffff;
+}
+.sobreDesc {
+    font-size: 20px;
+    padding-top: 10px;
+    margin-left: 10px;
+    color: #ffffff;
+}
+.sobre {
+    height: 210px;
+    display: flex;
+}
+.cristiano {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cristiano h1, p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    color: #ffffff;
+}
+.cristiano h1 {
+    font-size: 30px;
+}
+.cristiano h2 {
+    color: #ffffff;
+}
+.cristiano p {
+    font-size: 20px;
+}
+@media (max-width:600px) {
+    .banner {
+        width: 425px;
+        height: 450px;
+    }
+    .sobre {
+        height: auto;
+        flex-direction: column;
+    }
+    .sobre, .sobre1, .sobre2, .sobre3 {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       flex: 1;
+       border-right: none;
+       padding-bottom: 10px;
+   
+    }
+    .sobreDesc{
+        font-size: 15px;
+        color: #ffffff;
+    }
+    .cristiano {
+        width: 425px;
+    }
+    .cristiano h1{
+        width: 400px;
+    
+    }
+    .cristiano h2 {
+        color: #ffffff;
+    }
+    .cristiano p {
+        font-size: 10px;
+        width: 320px;
+        margin-left: 10px;
+        margin-right: 10px;
+    
+    }
+    .sobreTitulo {
+        font-size: 15px;
+    }
+    .cristiano ul, li {
+        color: #ffffff;
+    }
+    
+}
